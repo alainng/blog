@@ -15,7 +15,7 @@ bundle exec rake db:migrate
 bundle exec rails s
 ```
 
-##Tests
+## Tests
 ```
-bundle exec rspec
+bundle exec rspec -fd spec
 ```

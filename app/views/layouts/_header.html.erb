@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <table style="width:100%">
+      <tr>
+        <th><%= link_to "Home", articles_path %></th>
+        <th><%= link_to "Articles", articles_path %></th>
+        <th><%= link_to "Tools", articles_path %></th>
+        <th>
+          <% if logged_in? %>
+            <%= "#{current_user.email}" %>
+            <%= link_to "logout", logout_path %>
+          <% else %>
+            <%= link_to "login", login_path %>
+          <% end %>
+        </th>
+      </tr>
+    </table>
+  </body>
+</html>

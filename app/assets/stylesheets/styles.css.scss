@@ -7,23 +7,14 @@ $primary_color: #777;
 
 /* universal */
 
-a {
-  color: #0000AA;
-  img {
-    border: none;
-  }
-  &:hover {
-      color: #222;
-  }
-}
 
 body {
   padding-top: 60px;
   min-height: 1500px;
   font: {
-      family: Verdana, Helvetica, Arial;
-      size: 20px;
-    }
+    family: Verdana, Helvetica, Arial;
+    size: 20px;
+  }
 }
 
 section {
@@ -38,7 +29,15 @@ textarea {
   text-align: center;
 }
 
-
+a {
+  color: #0000AA;
+  img {
+    border: none;
+  }
+  &:hover {
+    color: #222;
+  }
+}
 
 .clear {
   clear: both;
@@ -47,7 +46,7 @@ textarea {
 }
 
 #container {
-  // max-width: 1080px;
+  max-width: 1280px;
   margin: 0 auto;
   background: #EEE;
   padding: 20px 40px;
@@ -58,10 +57,4 @@ textarea {
 #content {
   clear: both;
   padding-top: 20px;
-}
-
-#dropdown {
-  li {
-    width: 300px;
-  }
 }

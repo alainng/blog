@@ -11,5 +11,7 @@ Rails.application.routes.draw do
 
   get 'login'  => 'author_sessions#new'
   get 'logout' => 'author_sessions#destroy'
+  get 'about' => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
+  get 'resume' => 'static_pages#resume'
 end

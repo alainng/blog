@@ -1,0 +1,18 @@
+<% provide(:title, 'Contact') %>
+<div class="container">
+  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+    <legend class="text-center">Contact us</legend>
+    <div class="col-md-12">
+      <%= f.input :name, :required => true %>
+    </div>
+    <%= f.input :email, :required => true %>
+    <%= f.input :message, :as => :text, :required => true, :class => "form-control", :placeholder => "Please enter your message here...", :rows => "5" %>
+    <div class= "hidden">
+      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+    </div>
+    <div>
+      </br>
+      <%= f.button :submit, 'Send message', :class=> "btn btn-primary btn-lg" %>
+    </div>
+  <% end %>
+</div>

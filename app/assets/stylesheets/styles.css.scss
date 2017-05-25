@@ -28,13 +28,47 @@ a {
   height: 0;
   overflow: hidden;
 }
+.hidden {
+  display: none;
+}
 
-.container {
+.container,.container-fluid {
   // max-width: 1280px;
   // min-height: 700px;
   margin: 0 auto;
-  background: #FDF;
+  //background: #FDF;
   // padding: 20px 40px;
   // border: solid 1px black;
   // margin-top: 20px;
+}
+
+
+/*flash*/
+
+.alert-error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: left;
+}
+
+.alert-alert {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: left;
+}
+
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: left;
+}
+
+.alert-notice {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: left;
 }

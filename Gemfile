@@ -36,6 +36,8 @@ gem 'jbuilder', '~> 2.5'
 gem "paperclip"
 gem 'sorcery'
 
+gem 'mail_form'
+gem 'simple_form'
 
 
 # Use Capistrano for deployment
